@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Particle Sandbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="control-panel glass">
+        <h3>Physics Controls</h3>
+        
+        <div class="control-group">
+            <label>Particles: <span id="count-val">300</span></label>
+            <input type="range" id="particle-count" min="50" max="1000" value="300">
+        </div>
+
+        <div class="control-group">
+            <label>Connection Radius: <span id="radius-val">100</span></label>
+            <input type="range" id="connection-radius" min="0" max="250" value="100">
+        </div>
+        
+                <div class="control-group">
+            <label>Theme Color</label>
+            <input type="color" id="particle-color" value="#00ffff">
+        </div>
+
+        <div class="control-group">
+            <label>Interaction Mode</label>
+            <button id="btn-mode">Mode: Repel Force</button>
+        </div>
+        
+        <div class="stats">
+            <small>FPS: <span id="fps-counter">60</span></small>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
